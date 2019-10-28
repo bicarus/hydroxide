@@ -9,21 +9,21 @@ import (
 	"net/http"
 	"os"
 
-	imapmove "github.com/emersion/go-imap-move"
-	imapspacialuse "github.com/emersion/go-imap-specialuse"
-	imapserver "github.com/emersion/go-imap/server"
-	"github.com/emersion/go-smtp"
+	imapmove "github.com/bicarus/go-imap-move"
+	imapspacialuse "github.com/bicarus/go-imap-specialuse"
+	imapserver "github.com/bicarus/go-imap/server"
+	"github.com/bicarus/go-smtp"
 	"github.com/howeyc/gopass"
 	"golang.org/x/crypto/openpgp"
 	"golang.org/x/crypto/openpgp/armor"
 
-	"github.com/emersion/hydroxide/auth"
-	"github.com/emersion/hydroxide/carddav"
-	"github.com/emersion/hydroxide/events"
-	imapbackend "github.com/emersion/hydroxide/imap"
-	"github.com/emersion/hydroxide/imports"
-	"github.com/emersion/hydroxide/protonmail"
-	smtpbackend "github.com/emersion/hydroxide/smtp"
+	"github.com/bicarus/hydroxide/auth"
+	"github.com/bicarus/hydroxide/carddav"
+	"github.com/bicarus/hydroxide/events"
+	imapbackend "github.com/bicarus/hydroxide/imap"
+	"github.com/bicarus/hydroxide/imports"
+	"github.com/bicarus/hydroxide/protonmail"
+	smtpbackend "github.com/bicarus/hydroxide/smtp"
 )
 
 func newClient() *protonmail.Client {
